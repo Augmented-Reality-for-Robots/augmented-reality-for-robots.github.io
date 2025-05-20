@@ -51,7 +51,7 @@
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
-                <a href="https://www.utn.de/en/person/reihaneh-mirjalili/" target="_blank">Reihaneh Mirjalili</a><sup>*</sup>,</span>
+                <a href="https://www.linkedin.com/in/reihaneh-mirjalili-b112a8251/" target="_blank">Reihaneh Mirjalili</a><sup>*</sup>,</span>
                 <span class="author-block">
                   <a href="https://www.linkedin.com/in/juelg/" target="_blank">Tobias Jülg</a><sup>*</sup>,</span>
                   <span class="author-block">
@@ -71,7 +71,7 @@
                     <div class="publication-links">
                          <!-- Arxiv PDF link -->
                       <span class="link-block">
-                        <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
+                        <a href="https://arxiv.org/pdf/2505.08627" target="_blank"
                         class="external-link button is-normal is-rounded is-dark">
                         <span class="icon">
                           <i class="fas fa-file-pdf"></i>
@@ -80,6 +80,18 @@
                       </a>
                     </span>
 
+
+
+                    <!-- YouTube Video Link -->
+                    <span class="link-block">
+                      <a href="https://youtu.be/FWC8U7WeRFk?si=7_A39UWGxg275XcE" target="_blank"
+                      class="external-link button is-normal is-rounded is-dark">
+                        <span class="icon">
+                          <i class="fab fa-youtube"></i>
+                        </span>
+                        <span>Video</span>
+                      </a>
+                    </span>
 
                   <!-- Github link -->
                   <!-- <span class="link-block">
@@ -92,16 +104,7 @@
                   </a>
                 </span> -->
 
-                <!-- ArXiv abstract Link -->
-                <span class="link-block">
-                  <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
-                  class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                    <i class="ai ai-arxiv"></i>
-                  </span>
-                  <span>arXiv</span>
-                </a>
-              </span>
+
             </div>
           </div>
         </div>
@@ -111,21 +114,22 @@
 </section>
 
 
-<!-- Teaser video-->
-<section class="hero teaser">
+
+<section class="section mt-0">
   <div class="container is-max-desktop">
-    <div class="hero-body">
-      <video poster="" id="tree" controls height="100%">
-        <!-- Your video here -->
-        <source src="static/videos/Arro_final.mp4"
-        type="video/mp4">
-      </video>
-      <!-- <h2 class="subtitle has-text-centered">
-      </h2> -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <img src="static/images/mai_diagram_ARRO.png" alt="ARRO diagram" style="width: 100%;">
+      </div>
     </div>
   </div>
 </section>
-<!-- End teaser video -->
+
+
+
+
+
+
 
 <!-- Paper abstract -->
 <section class="section hero is-light">
@@ -148,6 +152,242 @@
   </div>
 </section>
 <!-- End paper abstract -->
+
+
+
+
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-multiline is-centered has-text-centered">
+      
+      <div class="column is-half">
+        <video autoplay loop muted playsinline>
+          <source src="static/videos/training.mp4" type="video/mp4">
+        </video>
+      </div>
+
+      <div class="column is-half">
+        <video autoplay loop muted playsinline>
+          <source src="static/videos/masked.mp4" type="video/mp4">
+        </video>
+      </div>
+
+      <div class="column is-half">
+        <video autoplay loop muted playsinline>
+          <source src="static/videos/arro.mp4" type="video/mp4">
+        </video>
+      </div>
+
+      <div class="column is-half">
+        <video autoplay loop muted playsinline>
+          <source src="static/videos/inference.mp4" type="video/mp4">
+        </video>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<div class="columns is-centered">
+  <div class="column is-two-thirds">
+
+    <p class="is-size-5 has-text-justified">
+      Visuomotor policies trained through imitation learning often fail to generalize across visual domain shifts.
+      Minor changes in background, lighting, or robot appearance at test time can lead to substantial performance drops.
+    </p>
+    <p class="is-size-5 has-text-justified mt-3">
+      In the example above, the robot learns to <em>drop a cube into a box and close the lid</em>.
+      At inference, the same task is attempted in a visually altered scene, with changes in background, distractors, and robot embodiment.
+      While standard policies break, <strong>ARRO</strong> filters out irrelevant content, retaining only the gripper, cube, and box, 
+      and overlays them on a structured virtual background.
+      This abstraction makes ARRO <strong>robust to visual variation</strong>.
+      To isolate the role of spatial cues, we also provide an ablation using a plain black background.
+
+
+    </p>
+  </div>
+</div>
+
+
+
+
+
+<div class="columns is-centered">
+  <div class="column is-two-thirds">
+    <h2 class="title is-4"><strong>ARRO Generalizes Across Tasks and Scenes</strong></h2>
+
+  </div>
+</div>
+
+
+
+<section class="section">
+  <div class="container">
+    <div class="columns is-vcentered">
+
+      <!-- 4 videos stacked in 2x2 layout -->
+      <div class="column">
+        <div class="columns is-multiline is-gapless">
+
+          <div class="column is-half">
+            <video autoplay loop muted playsinline style="width: 99%;">
+              <source src="static/videos/pick.mp4" type="video/mp4">
+            </video>
+          </div>
+
+          <div class="column is-half">
+            <video autoplay loop muted playsinline style="width: 99%;">
+              <source src="static/videos/push.mp4" type="video/mp4">
+            </video>
+          </div>
+
+          <div class="column is-half">
+            <video autoplay loop muted playsinline style="width: 99%;">
+              <source src="static/videos/box.mp4" type="video/mp4">
+            </video>
+          </div>
+
+          <div class="column is-half">
+            <video autoplay loop muted playsinline style="width: 99%;">
+              <source src="static/videos/doll.mp4" type="video/mp4">
+            </video>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Bar Plot aligned next to 2x2 grid -->
+      <div class="column is-narrow">
+        <img src="static/images/bar_plot.png" alt="ARRO Results" style="height: 370px;">
+      </div>
+
+
+    </div>
+  </div>
+</section>
+
+
+
+<div class="columns is-centered">
+  <div class="column is-two-thirds">
+
+
+    <p class="is-size-5 has-text-justified">
+
+
+      The Vanilla Diffusion Policy performs poorly under domain shifts due to its dependence on raw visual features. 
+      The Masked Diffusion Policy does better by removing distractors but still underperforms compared to ARRO, likely because it also removes useful cues.
+       ARRO outperforms both by filtering out irrelevant information while restoring a consistent background, leading to improved robustness and generalization.
+    </p>
+  </div>
+</div>
+
+
+
+
+
+
+
+<div class="columns is-centered">
+  <div class="column is-two-thirds">
+    <h2 class="title is-4"><strong>Zero-Shot Spatial Reasoning with ARRO</strong></h2>
+
+  </div>
+</div>
+
+
+<section class="section">
+  <div class="container">
+    <div class="columns is-vcentered">
+
+      <div class="column is-narrow">
+        <img src="static/images/command.png" alt="Preference Results" style="height: 230px;">
+      </div>
+
+      <!-- Video: Preference -->
+      <div class="column">
+        <video autoplay loop muted playsinline style="width: 100%; max-height: 320px;">
+          <source src="static/videos/distractor.mp4" type="video/mp4">
+        </video>
+      </div>
+
+      <!-- Bar plot: Preference -->
+      <div class="column is-narrow">
+        <img src="static/images/distractor.png" alt="Preference Results" style="height: 230px;">
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+
+<div class="columns is-centered">
+  <div class="column is-two-thirds">
+
+
+    <p class="is-size-5 has-text-justified">
+      In this setup, the robot receives a natural language instruction: <em>“Push the blue cube that is farther from the yellow cube to the red cross.”</em>
+       Executing this task requires spatial reasoning and grounding language in the visual scene.
+
+      Standard visuomotor policies often fail when the scene layout changes or distractors are present.
+       ARRO addresses this by abstracting away irrelevant regions and retaining only the gripper and target object.
+
+      This abstraction supports robust relational reasoning. 
+      As shown above, ARRO generalizes zero-shot to new configurations, succeeding in both <em>left/right</em> and <em>closer/farther</em> variants without additional training.
+    </p>
+  </div>
+</div>
+
+
+
+
+
+<div class="columns is-centered">
+  <div class="column is-two-thirds">
+    <h2 class="title is-4"><strong>Handling Textures and Object Shape Variation</strong></h2>
+
+  </div>
+</div>
+
+
+
+<section class="section">
+  <div class="container has-text-centered">
+    <video autoplay loop muted playsinline style="max-width: 60%; height: auto;">
+      <source src="static/videos/doll_box_blend.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+</section>
+
+
+<div class="columns is-centered">
+  <div class="column is-two-thirds">
+
+
+    <p class="is-size-5 has-text-justified">
+      In this visualization, we zoom into two visually rich tasks. Despite the presence of rich textures, non-rigid shapes, and occlusion,
+      ARRO's segmentation module consistently identifies and preserves the task-relevant components: the gripper and manipulable objects.
+
+      This robustness in visual abstraction enables generalist policies to execute precise actions even in the presence of complex, 
+      unfamiliar visual elements—without any additional training or fine-tuning.
+    </p>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
 
 
 <!-- Image carousel -->
@@ -257,14 +497,35 @@
 <!--End paper poster -->
 
 
-<!--BibTex citation -->
-  <section class="section" id="BibTeX">
-    <div class="container is-max-desktop content">
-      <h2 class="title">BibTeX</h2>
-      <pre><code>BibTex Code Here</code></pre>
+<!-- BibTeX citation section -->
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    
+    <div class="box">
+      <pre><code id="bibtex-entry">@article{mirjalili2025augmented,
+  title={Augmented Reality for RObots (ARRO): Pointing Visuomotor Policies Towards Visual Robustness},
+  author={Mirjalili, Reihaneh and J{\"u}lg, Tobias and Walter, Florian and Burgard, Wolfram},
+  journal={arXiv preprint arXiv:2505.08627},
+  year={2025}
+}</code></pre>
+      <button class="button is-small is-link mt-2" onclick="copyBibtex()">Copy to Clipboard</button>
     </div>
+  </div>
 </section>
-<!--End BibTex citation -->
+
+<!-- Copy to clipboard script -->
+<script>
+  function copyBibtex() {
+    const bibtex = document.getElementById("bibtex-entry").innerText;
+    navigator.clipboard.writeText(bibtex).then(() => {
+      alert("BibTeX copied to clipboard!");
+    }, () => {
+      alert("Failed to copy BibTeX.");
+    });
+  }
+</script>
+
 
 
 
