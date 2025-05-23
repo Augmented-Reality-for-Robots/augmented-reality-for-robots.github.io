@@ -389,11 +389,100 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+<div class="columns is-centered">
+  <div class="column is-two-thirds">
+    <h2 class="title is-4"><strong>Cross Embodiment</strong></h2>
+
+  </div>
+</div>
+
+
+
+
   <section class="section hero is-small">
     <div class="container is-max-desktop">
       <div class="columns is-centered has-text-centered">
         <div class="column">
-          <h2 class="title is-3">Real-to-Sim</h2>
+          <img src="static/images/crossx.svg" alt="Cross embodiment visualization" width="100%" />
+          <!-- <div class="content has-text-justified">
+            <p>Some text
+            </p>
+          </div> -->
+          <div class="hero-body">
+            <div class="columns is-vcentered interpolation-panel">
+              <div class="column  has-text-centered">
+                <h5><b>DP Vanilla</b></h5>
+                <h5 style="font-size:30px;">❌</h5>
+                <video autoplay controls muted loop playsinline width="90%">
+                  <source src="static/videos/crossx_dp_vanilla.mp4" type="video/mp4">
+                </video>
+              </div>
+              <div class="column  has-text-centered">
+                <h5><b>DP ARRO</b></h5>
+                <h5 style="font-size:30px;">✅</h5>
+                <video autoplay controls muted loop playsinline width="90%">
+                  <source src="static/videos/crossx_dp_arro.mp4" type="video/mp4">
+                </video>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+<div class="columns is-centered">
+  <div class="column is-two-thirds">
+
+    <p class="is-size-5 has-text-justified">
+      To assess how well our ARRO policies generalize across different robotic embodiments, 
+      we trained them on the FR3 robot in simulation and evaluated their performance on a distinct UR5e embodiment. 
+      While baseline diffusion policies suffered a complete performance collapse when transferred, 
+      ARRO and masked variants demonstrated strong cross-embodiment generalization with only minor reductions in success rates. 
+      This robustness is attributed to ARRO’s architecture, which masks embodiment-specific features and operates in a Cartesian control space, 
+      ensuring consistent behavior across varied physical forms. 
+      These results underscore ARRO's potential for scalable deployment across heterogeneous robotic platforms.
+
+
+    </p>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+<div class="columns is-centered">
+  <div class="column is-two-thirds">
+    <h2 class="title is-4"><strong>Real-to-Sim</strong></h2>
+  </div>
+</div>
+
+
+
+
+  <section class="section hero is-small">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column">
           <img src="static/images/real2sim.svg" alt="Real to sim visualization" width="100%" />
           <!-- <div class="content has-text-justified">
             <p>Some text
@@ -425,38 +514,41 @@
     </div>
   </section>
 
-  <section class="section hero is-small">
-    <div class="container is-max-desktop">
-      <div class="columns is-centered has-text-centered">
-        <div class="column">
-          <h2 class="title is-3">Cross Embodiment</h2>
-          <img src="static/images/crossx.svg" alt="Cross embodiment visualization" width="100%" />
-          <!-- <div class="content has-text-justified">
-            <p>Some text
-            </p>
-          </div> -->
-          <div class="hero-body">
-            <div class="columns is-vcentered interpolation-panel">
-              <div class="column  has-text-centered">
-                <h5><b>DP Vanilla</b></h5>
-                <h5 style="font-size:30px;">❌</h5>
-                <video autoplay controls muted loop playsinline width="90%">
-                  <source src="static/videos/crossx_dp_vanilla.mp4" type="video/mp4">
-                </video>
-              </div>
-              <div class="column  has-text-centered">
-                <h5><b>DP ARRO</b></h5>
-                <h5 style="font-size:30px;">✅</h5>
-                <video autoplay controls muted loop playsinline width="90%">
-                  <source src="static/videos/crossx_dp_arro.mp4" type="video/mp4">
-                </video>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+
+
+
+
+<div class="columns is-centered">
+  <div class="column is-two-thirds">
+
+    <p class="is-size-5 has-text-justified">
+    We evaluated Diffusion Policy, Octo, and OpenVLA for real-to-sim transfer on the pick-v2 task. 
+    While all models performed well in the real world, their success rates dropped sharply in simulation. 
+    OpenVLA with ARRO and black masking significantly outperformed its vanilla version, retaining strong performance across domains.
+    As shown, ARRO enables successful task execution in sim and consistently higher rewards, 
+    highlighting its effectiveness in bridging real-to-sim gaps.
+
+
+    </p>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 <!-- Image carousel -->
