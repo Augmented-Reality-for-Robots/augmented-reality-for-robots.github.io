@@ -371,7 +371,6 @@
   <div class="container has-text-centered">
     <video autoplay loop controls muted playsinline style="max-width: 60%; height: auto;">
       <source src="static/videos/doll_box_blend.mp4" type="video/mp4">
-      Your browser does not support the video tag.
     </video>
   </div>
 </section>
@@ -515,7 +514,7 @@
     
     <div class="box">
       <pre><code id="bibtex-entry">@article{mirjalili2025augmented,
-  title={Augmented Reality for RObots (ARRO): Pointing Visuomotor Policies Towards Visual Robustness},
+  title={{Augmented Reality for RObots (ARRO)}: {P}ointing Visuomotor Policies Towards Visual Robustness},
   author={Mirjalili, Reihaneh and J{\"u}lg, Tobias and Walter, Florian and Burgard, Wolfram},
   journal={arXiv preprint arXiv:2505.08627},
   year={2025}
@@ -529,11 +528,7 @@
 <script>
   function copyBibtex() {
     const bibtex = document.getElementById("bibtex-entry").innerText;
-    navigator.clipboard.writeText(bibtex).then(() => {
-      alert("BibTeX copied to clipboard!");
-    }, () => {
-      alert("Failed to copy BibTeX.");
-    });
+    navigator.clipboard.writeText(bibtex);
   }
 </script>
 
